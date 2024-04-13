@@ -1,11 +1,3 @@
-vim.cmd("set number")
-vim.cmd("set relativenumber")
-vim.cmd("set autoindent")
-vim.cmd("set tabstop=4")
-vim.cmd("set mouse=a")
-vim.g.mapleader = " "
-
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
 		  vim.fn.system({
@@ -20,5 +12,5 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-
+require("vim-commands")
 require("lazy").setup("plugins")
