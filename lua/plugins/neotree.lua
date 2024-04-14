@@ -6,7 +6,7 @@ return{
       "nvim-tree/nvim-web-devicons",
       "MunifTanjim/nui.nvim",
     },
-	config = function()	
+	config = function()
 		vim.keymap.set("n", "<C-n>", ":Neotree toggle filesystem reveal right<CR>", {})
-	end	
+	end
 }
