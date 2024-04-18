@@ -20,7 +20,7 @@ function get-gitaddall {
     git add .
 }
 function get-gitcommit {
-    git commit -m
+    git commit -m $args
 }
 function get-gitpull {
     git pull
@@ -30,7 +30,7 @@ function get-gitpushsetupstream {
 }
 
 function get-gitrestorestaged {
-    git restore --staged
+    git restore --staged $args
 }
 function get-gitpush {
     git push
