@@ -1,7 +1,13 @@
 oh-my-posh init pwsh --config  "$env:POSH_THEMES_PATH/myTheme/cloud-context.omp.json" | Invoke-Expression
 
+# normal functions
+function get-pnpm{
+    pnpm $args
+}
+
 # Aliases
 Set-Alias -Name touch  New-Item
+Set-Alias -Name pn get-pnpm
 
 
 # Remove Aliases
